@@ -1,2 +1,2 @@
 # excel-challenge
-Excel Homework
+GT BCS Data Science Excel homework
