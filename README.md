@@ -10,6 +10,7 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempted to uncover some market trends.
 
+![Campaign Status](Images/conditional_formatting_state.png)
 ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
 ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
 ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
@@ -17,6 +18,7 @@ Using the Excel table provided, I modified and analyzed the data of 4,000 past K
 
 I used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
+![Percent Funded](Images/conditional_formatting_percent_funded.png)
 ![000 Percent Funded](Images/conditional_formatting_000_percent_funded.png)
 ![050 Percent Funded](Images/conditional_formatting_050_percent_funded.png)
 ![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
