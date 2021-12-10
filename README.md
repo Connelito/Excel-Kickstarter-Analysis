@@ -10,7 +10,6 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempted to uncover some market trends.
 
-![Campaign Status](Images/conditional_formatting_state.png)
 ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
 ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
 ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
@@ -18,7 +17,6 @@ Using the Excel table provided, I modified and analyzed the data of 4,000 past K
 
 I used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
-![Percent Funded](Images/conditional_formatting_percent_funded.png)
 ![000 Percent Funded](Images/conditional_formatting_000_percent_funded.png)
 ![050 Percent Funded](Images/conditional_formatting_050_percent_funded.png)
 ![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
@@ -38,13 +36,13 @@ I created a new column P called `Average Donation` that uses a formula to uncove
 
 I created two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category` and `Sub-Category` column into two parts.
 
-![Category Stats](Images/CategoryStats.PNG)
+	![Category Stats](Images/CategoryStats.PNG)
 
 I created a new sheet with a pivot table that will analyze my initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**.
 
   * Create a stacked column pivot chart that can be filtered by country based on the table you have created.
 
-![Subcategory Stats](Images/SubcategoryStats.PNG)
+	![Subcategory Stats](Images/SubcategoryStats.PNG)
 
   * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**.
 
