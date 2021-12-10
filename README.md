@@ -10,18 +10,18 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempted to uncover some market trends.
 
-	![Campaign Status-Successful](Images/conditional_formatting_state_successful.PNG)
-	![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
-	![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
-	![Campaign Status-Live](Images/conditional_formatting_state_live.png)
+![Campaign Status-Successful](Images/conditional_formatting_state_successful.PNG)
+![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
+![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
+![Campaign Status-Live](Images/conditional_formatting_state_live.png)
 
 I used conditional formatting to fill each cell in the "state" column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
-	![000 Percent Funded](Images/conditional_formatting_0_percent_funded.png)
-	![050 Percent Funded](Images/conditional_formatting_50_percent_funded.png)
-	![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
-	![150 Percent Funded](Images/conditional_formatting_150_percent_funded.png)
-	![200 Percent Funded](Images/conditional_formatting_200_percent_funded.png)
+![000 Percent Funded](Images/conditional_formatting_0_percent_funded.png)
+![050 Percent Funded](Images/conditional_formatting_50_percent_funded.png)
+![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
+![150 Percent Funded](Images/conditional_formatting_150_percent_funded.png)
+![200 Percent Funded](Images/conditional_formatting_200_percent_funded.png)
 
 I created a new column O called `Percent Funded` that uses a formula to uncover how much money a campaign made to reach its initial goal. After that, I used conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale starts at 0 as a dark shade of red, transitioning to green at 100, and blue at 200.
 
