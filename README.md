@@ -1,40 +1,49 @@
-# Excel Homework: Kickstart My Chart
+# Kickstart My Chart
 
-## Background
+## Summary
 
 Over $2 billion has been raised using the massively successful crowdfunding service, Kickstarter, but not every project has found success. Of the more than 300,000 projects launched on Kickstarter, only a third have made it through the funding process with a positive outcome.
 
-Getting funded on Kickstarter requires meeting or exceeding the project's initial goal, so many organizations spend months looking through past projects in an attempt to discover some trick for finding success. For this week's homework, you will organize and analyze a database of 4,000 past projects in order to uncover any hidden trends.
+Getting funded on Kickstarter requires meeting or exceeding the project's initial goal, so many organizations spend months looking through past projects in an attempt to discover some trick for finding success. I will organize and analyze a database of 4,000 past projects in order to uncover any hidden trends.
 
-### Before You Begin
+## Conditional Formatting and Column Creation
 
-1. Create a new space for this project called `excel-challenge` in either DropBox or Google Drive. **Do not add this homework to an existing space**.
+Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempted to uncover some market trends.
 
-2. Store your excel workbooks in here and create a sharable link for submission.
+	![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
+	![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
+	![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
+	![Campaign Status-Live](Images/conditional_formatting_state_live.png)
 
-## Instructions
+I used conditional formatting to fill each cell in the "state" column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
-![Kickstarter Table](Images/FullTable.PNG)
+	![000 Percent Funded](Images/conditional_formatting_0_percent_funded.png)
+	![050 Percent Funded](Images/conditional_formatting_50_percent_funded.png)
+	![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
+	![150 Percent Funded](Images/conditional_formatting_150_percent_funded.png)
+	![200 Percent Funded](Images/conditional_formatting_200_percent_funded.png)
 
-Using the Excel table provided, modify and analyze the data of 4,000 past Kickstarter projects as you attempt to uncover some market trends.
+I created a new column O called `Percent Funded` that uses a formula to uncover how much money a campaign made to reach its initial goal. After that, I used conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale starts at 0 as a dark shade of red, transitioning to green at 100, and blue at 200.
 
-* Use conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
+	![000 Percent Funded](Images/conditional_formatting_0_percent_funded.png)
+	![050 Percent Funded](Images/conditional_formatting_50_percent_funded.png)
+	![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
+	![150 Percent Funded](Images/conditional_formatting_150_percent_funded.png)
+	![200 Percent Funded](Images/conditional_formatting_200_percent_funded.png)
 
-  * Create a new column O called `Percent Funded` that uses a formula to uncover how much money a campaign made to reach its initial goal.
+I created a new column P called "Average Donation" that uses a formula to uncover how much each backer for the project paid on average.
 
-* Use conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale should start at 0 and be a dark shade of red, transitioning to green at 100, and blue at 200.
+	
 
-  * Create a new column P called `Average Donation` that uses a formula to uncover how much each backer for the project paid on average.
+I created two new columns, one called "Category" at Q and another called "Sub-Category" at R, which use formulas to split the "Category" and "Sub-Category" column into two parts.
 
-  * Create two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category and Sub-Category` column into two parts.
-
-  ![Category Stats](Images/CategoryStats.PNG)
+	![Category Stats](Images/CategoryStats.PNG)
 
   * Create a new sheet with a pivot table that will analyze your initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**.
 
   * Create a stacked column pivot chart that can be filtered by country based on the table you have created.
 
-  ![Subcategory Stats](Images/SubcategoryStats.PNG)
+	![Subcategory Stats](Images/SubcategoryStats.PNG)
 
   * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**.
 
