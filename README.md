@@ -25,11 +25,14 @@ I used conditional formatting to fill each cell in the `state` column with a dif
 
 I created a new column O called `Percent Funded` that uses a formula to uncover how much money a campaign made to reach its initial goal. After that, I used conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale starts at 0 as a dark shade of red, transitioning to green at 100, and blue at 200.
 
-	![Average Donation](Images/column_creation_average_donation.png)
+![Average Donation Formula](Images/average_donation_formula.png)
+![Average Donation](Images/column_creation_average_donation.png)
 
 I created a new column P called `Average Donation` that uses a formula to uncover how much each backer for the project paid on average.
 
-	![Average Donation](Images/column_creation_average_donation.png)
+![Category Formula](Images/category_formula.png)
+![Subcategory Formula](Images/subcategory_formula.png)
+![Category-Subcategory](Images/column_creation_category_subcategory.png)
 
 I created two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category` and `Sub-Category` column into two parts.
 
@@ -127,26 +130,3 @@ For those looking for an additional challenge, you will evaluate the number of b
 
 * Use your data to determine if there is more variability with successful or unsuccessful campaigns. Does this make sense? Why or why not?
 
-## Submission
-
-* To submit your homework, upload the solution and files to a GitHub repo, Dropbox, or Google Drive and submit the link to <https://bootcampspot.com/>.
-
-## Rubric
-
-[Unit 1 Rubric - Excel Homework: Kickstart My Chart](https://docs.google.com/document/d/1RucBXrHMoOa8E4lta5bfaAfUxvRBvMjPELh3uHJL0tY/edit?usp=sharing)
-
-## Employer-Ready Criteria
-
-Students who are marked as employer-ready gain access to our employer referral program, additional workshops, and other resources. Work with your Career Director to become employer-ready. At a minimum, you must have:
-
-- A clear, concise, and compelling resume. Submit via your learning platform for review.
-- A polished GitHub profile:
-  - 3 - 6 pinned repositories ([instructions here](https://docs.github.com/en/enterprise/2.13/user/articles/pinning-items-to-your-profile))
-  - at least 20 commits per repository
-  - professional titles, i.e. not "Homework #1"
-  - thorough README.md files for each repository
-  - clean code
-
-- - -
-
-© 2019 Trilogy Education Services
