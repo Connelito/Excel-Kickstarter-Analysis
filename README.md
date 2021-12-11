@@ -58,7 +58,9 @@ The dates stored within the `deadline` and `launched_at` columns use Unix timest
 
 I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`. After that, I created a pivot chart line graph that visualizes this new table.
 
-## Bonus
+## Outcomes
+
+Using the modified data of the Kickstarter projects, I will create new columns and charts to display the outcomes of my findings in an attempt to uncover some market trends.
 
 I created a new sheet with 8 columns:
   * `Goal`
@@ -85,15 +87,11 @@ In the `Goal` column, I created 12 rows with the following headers:
   * 45000 to 49999
   * Greater than or equal to 50000
 
-![Goal Outcomes](Images/GoalOutcomes.PNG)
+  ![Goal Outcomes](Images/goal_outcomes.png)
 
-* Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
+Using the `COUNTIFS()` formula, I counted how many successful, failed, and canceled projects were created with goals within the ranges listed above. With that, I populated the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data. I then added up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, I found the percentage of projects that were successful, failed, or canceled per goal range. From there, I created a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
 
-* Add up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, find the percentage of projects that were successful, failed, or canceled per goal range.
-
-* Create a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
-
-## Bonus Statistical Analysis
+## Statistical Analysis
 
 If one were to describe a successful crowdfunding campaign, most people would use the number of campaign backers as a metric of success. One of the most efficient ways that data scientists characterize a quantitative metric, such as the number of campaign backers, is by creating a summary statistics table.
 
