@@ -1,3 +1,5 @@
+![Kickstarter Header](Images/kickstarter_header.png)
+
 # Kickstart My Chart
 
 ## Summary
@@ -8,7 +10,7 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 ## Conditional Formatting and Column Creation
 
-Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempted to uncover some market trends.
+Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempt to uncover some market trends.
 
 ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
 ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
@@ -36,27 +38,25 @@ I created a new column P called `Average Donation` that uses a formula to uncove
 
 I created two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category` and `Sub-Category` column into two parts.
 
-	![Category Stats](Images/CategoryStats.PNG)
+## Pivot Tables and Pivot Charts
 
-I created a new sheet with a pivot table that will analyze my initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**.
+Using the modified data of the Kickstarter projects, I will use pivot tables and pivot charts with the newly created columns to futher my attempt to uncover some market trends.
 
-  * Create a stacked column pivot chart that can be filtered by country based on the table you have created.
+![Category Stats](Images/pivot_table_pivot_chart_category_stats.PNG)
 
-	![Subcategory Stats](Images/SubcategoryStats.PNG)
+I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**. I then created a stacked column pivot chart that's able to be filtered by country based on the table created.
 
-  * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**.
+![Subcategory Stats](Images/pivot_table_pivot_chart_subcategory_stats.PNG)
 
-  * Create a stacked column pivot chart that can be filtered by country and parent-category based on the table you have created.
+I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**. I then created a stacked column pivot chart that can be filtered by country and parent-category based on the table created.
 
-* The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately for us, [there is a formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) that can be used to convert these timestamps to a normal date.
+![Timestamp Conversion](Images/timestamp_conversion.PNG)
 
-  * Create a new column named `Date Created Conversion` that will use [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained within `launched_at` into Excel's date format.
+The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.t 
 
-  * Create a new column named `Date Ended Conversion` that will use [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) to convert the data contained within `deadline` into Excel's date format.
+![Outcomes Based on Launch Date](Images/launch_date_outcomes.PNG)
 
-  ![Outcomes Based on Launch Date](Images/LaunchDateOutcomes.PNG)
-
-  * Create a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
+I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`.
 
   * Now create a pivot chart line graph that visualizes this new table.
 
