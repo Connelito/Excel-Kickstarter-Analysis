@@ -42,19 +42,19 @@ I created two new columns, one called `Category` at Q and another called `Sub-Ca
 
 Using the modified data of the Kickstarter projects, I will use pivot tables and pivot charts with the newly created columns to futher my attempt to uncover some market trends.
 
-![Category Stats](Images/pivot_table_pivot_chart_category_stats.PNG)
+![Category Stats](Images/pivot_table_pivot_chart_category_stats.png)
 
 I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**. I then created a stacked column pivot chart that's able to be filtered by country based on the table created.
 
-![Subcategory Stats](Images/pivot_table_pivot_chart_subcategory_stats.PNG)
+![Subcategory Stats](Images/pivot_table_pivot_chart_subcategory_stats.png)
 
 I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**. I then created a stacked column pivot chart that can be filtered by country and parent-category based on the table created.
 
-![Timestamp Conversion](Images/timestamp_conversion.PNG)
+![Timestamp Conversion](Images/timestamp_conversion.png)
 
 The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.t 
 
-![Outcomes Based on Launch Date](Images/launch_date_outcomes.PNG)
+![Outcomes Based on Launch Date](Images/launch_date_outcomes.png)
 
 I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`.
 
