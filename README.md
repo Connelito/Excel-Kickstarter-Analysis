@@ -60,7 +60,15 @@ I created a new sheet with a pivot table with a column of `state`, rows of `Date
 
 ## Bonus
 
-I created a new sheet with 8 columns: `Goal` `Number Successful` `Number Failed` `Number Canceled` `Total Projects` `Percentage Successful` `Percentage Failed` `Percentage Canceled` to f 
+I created a new sheet with 8 columns:
+`Goal`
+`Number Successful`
+`Number Failed`
+`Number Canceled`
+`Total Projects`
+`Percentage Successful`
+`Percentage Failed`
+`Percentage Canceled` 
 
 * In the `Goal` column, create 12 rows with the following headers:
 
