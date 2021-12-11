@@ -52,32 +52,15 @@ I created a new sheet with a pivot table that analyzed my initial worksheet to c
 
 ![Timestamp Conversion](Images/timestamp_conversion.png)
 
-The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.t 
+The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.
 
 ![Outcomes Based on Launch Date](Images/launch_date_outcomes.png)
 
-I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`.
-
-  * Now create a pivot chart line graph that visualizes this new table.
-
-* Create a report in Microsoft Word and answer the following questions.
-
-1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
-2. What are some limitations of this dataset?
-3. What are some other possible tables and/or graphs that we could create?
+I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`. After that, I created a pivot chart line graph that visualizes this new table.
 
 ## Bonus
 
-* Create a new sheet with 8 columns:
-
-  * `Goal`
-  * `Number Successful`
-  * `Number Failed`
-  * `Number Canceled`
-  * `Total Projects`
-  * `Percentage Successful`
-  * `Percentage Failed`
-  * `Percentage Canceled`
+I created a new sheet with 8 columns: `Goal` `Number Successful` `Number Failed` `Number Canceled` `Total Projects` `Percentage Successful` `Percentage Failed` `Percentage Canceled` to f 
 
 * In the `Goal` column, create 12 rows with the following headers:
 
@@ -125,6 +108,14 @@ For those looking for an additional challenge, you will evaluate the number of b
   * The variance of the number of backers.
 
   * The standard deviation of the number of backers.
+
+
+
+* Create a report in Microsoft Word and answer the following questions.
+
+1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
+2. What are some limitations of this dataset?
+3. What are some other possible tables and/or graphs that we could create?
 
 * Use your data to determine whether the mean or the median summarizes the data more meaningfully.
 
