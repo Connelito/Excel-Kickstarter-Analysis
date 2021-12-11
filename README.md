@@ -12,10 +12,10 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempt to uncover some market trends.
 
-![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
-![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
-![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
-![Campaign Status-Live](Images/conditional_formatting_state_live.png)
+        ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
+        ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
+        ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
+        ![Campaign Status-Live](Images/conditional_formatting_state_live.png)
 
 I used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
@@ -70,7 +70,7 @@ I created a new sheet with 8 columns:
   * `Percentage Failed`
   * `Percentage Canceled` 
 
-* In the `Goal` column, create 12 rows with the following headers:
+In the `Goal` column, I created 12 rows with the following headers:
 
   * Less than 1000
   * 1000 to 4999
@@ -85,7 +85,7 @@ I created a new sheet with 8 columns:
   * 45000 to 49999
   * Greater than or equal to 50000
 
-  ![Goal Outcomes](Images/GoalOutcomes.PNG)
+![Goal Outcomes](Images/GoalOutcomes.PNG)
 
 * Using the `COUNTIFS()` formula, count how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populate the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
 
