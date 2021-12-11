@@ -97,37 +97,32 @@ From there, I created a line chart that graphs the relationship between a goal's
 
 ## Statistical Analysis
 
-If one were to describe a successful crowdfunding campaign, most people would use the number of campaign backers as a metric of success. One of the most efficient ways that data scientists characterize a quantitative metric, such as the number of campaign backers, is by creating a summary statistics table.
+If one were to describe a successful crowdfunding campaign, most people would use the number of campaign backers as a metric of success. One of the most efficient ways to characterize a quantitative metric, such as the number of campaign backers, is by creating a summary statistics table.
 
-For those looking for an additional challenge, you will evaluate the number of backers of successful and unsuccessful campaigns by creating **your own** summary statistics table.
+  ![Backers Outcomes](Images/backers_outcome.png)
 
-* Create a new worksheet in your workbook, and create a column each for the number of backers of successful campaigns and unsuccessful campaigns.
+I created a new worksheet in my workbook and created a column for the number of backers of successful campaigns and unsuccessful campaigns. With that information, I was able to evaluate the `Mean` `Median` `Minimum` `Maximum` `Variance` and `Standard Deviation` for successful and unsuccessful campaigns.
 
-  ![Images/backers01.png](Images/backers01.png)
+## Report
 
-* Use Excel to evaluate the following for successful campaigns, and then for unsuccessful campaigns:
+Conclusions we can draw about Kickstarter campaigns from the data given:
+* Theater is the most successful category for projects
+* Technology has similar numbers for successful, failed and canceled projects
+* All of the “journalism” projects were canceled before they started
+* There are a small number of live campaigns
+* Plays were the most frequented and most successful sub-category for projects
+* For the month of May, successful campaigns created during that month where at its peak
+* From the months of May through September, successful campaigns created during these months decreased from month to month
+* For the month of December, successful campaigns created during that month fell below the number of failed campaigns
+* Canceled projects stay at a consistent amount throughout the year 
 
-  * The mean number of backers.
+Limitations of the dataset:
+* The data set only takes reports from 20 countries
+* The data set pulls from a certain number of years (2009 - 2017)
+* With the stacked graphs, it is harder to see the total amounts for each state when multiple are stacked
 
-  * The median number of backers.
+Mean/ Median Data Summary:
+* Based on the data, when comparing the two against one another, the median summarizes the data more meaningfully. When reviewing the data, the range of the data set is a large spread which means that the larger numbers tend to make the mean become more lopsided. If the data had a more normal distribution, the mean would probably be better suited to summarize the information.
 
-  * The minimum number of backers.
-
-  * The maximum number of backers.
-
-  * The variance of the number of backers.
-
-  * The standard deviation of the number of backers.
-
-
-
-* Create a report in Microsoft Word and answer the following questions.
-
-1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
-2. What are some limitations of this dataset?
-3. What are some other possible tables and/or graphs that we could create?
-
-* Use your data to determine whether the mean or the median summarizes the data more meaningfully.
-
-* Use your data to determine if there is more variability with successful or unsuccessful campaigns. Does this make sense? Why or why not?
-
+Variability between campaigns and why it makes sense:
+* Based on the data, there is more variability with successful campaigns. This makes sense because the range of data for successful campaigns are larger and because more outliers are present in the data set.
