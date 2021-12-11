@@ -1,6 +1,4 @@
-![Kickstarter Header](Images/kickstarter_header.png)
-
-# Kickstart My Chart
+  ![Kickstarter Header](Images/kickstarter_header.png)
 
 ## Summary
 
