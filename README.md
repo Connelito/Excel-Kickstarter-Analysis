@@ -12,29 +12,29 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempt to uncover some market trends.
 
-    ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
-    ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
-    ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
-    ![Campaign Status-Live](Images/conditional_formatting_state_live.png)
+  ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
+  ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
+  ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
+  ![Campaign Status-Live](Images/conditional_formatting_state_live.png)
 
 I used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
-![000 Percent Funded](Images/conditional_formatting_000_percent_funded.png)
-![050 Percent Funded](Images/conditional_formatting_050_percent_funded.png)
-![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
-![150 Percent Funded](Images/conditional_formatting_150_percent_funded.png)
-![200 Percent Funded](Images/conditional_formatting_200_percent_funded.png)
+  ![000 Percent Funded](Images/conditional_formatting_000_percent_funded.png)
+  ![050 Percent Funded](Images/conditional_formatting_050_percent_funded.png)
+  ![100 Percent Funded](Images/conditional_formatting_100_percent_funded.png)
+  ![150 Percent Funded](Images/conditional_formatting_150_percent_funded.png)
+  ![200 Percent Funded](Images/conditional_formatting_200_percent_funded.png)
 
 I created a new column O called `Percent Funded` that uses a formula to uncover how much money a campaign made to reach its initial goal. After that, I used conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale starts at 0 as a dark shade of red, transitioning to green at 100, and blue at 200.
 
-![Average Donation Formula](Images/average_donation_formula.png)
-![Average Donation](Images/column_creation_average_donation.png)
+  ![Average Donation Formula](Images/average_donation_formula.png)
+  ![Average Donation](Images/column_creation_average_donation.png)
 
 I created a new column P called `Average Donation` that uses a formula to uncover how much each backer for the project paid on average.
 
-![Category Formula](Images/category_formula.png)
-![Subcategory Formula](Images/subcategory_formula.png)
-![Category-Subcategory](Images/column_creation_category_subcategory.png)
+  ![Category Formula](Images/category_formula.png)
+  ![Subcategory Formula](Images/subcategory_formula.png)
+  ![Category-Subcategory](Images/column_creation_category_subcategory.png)
 
 I created two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category` and `Sub-Category` column into two parts.
 
@@ -42,19 +42,19 @@ I created two new columns, one called `Category` at Q and another called `Sub-Ca
 
 Using the modified data of the Kickstarter projects, I will use pivot tables and pivot charts with the newly created columns to futher my attempt to uncover some market trends.
 
-![Category Stats](Images/pivot_table_pivot_chart_category_stats.png)
+  ![Category Stats](Images/pivot_table_pivot_chart_category_stats.png)
 
 I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**. I then created a stacked column pivot chart that's able to be filtered by country based on the table created.
 
-![Subcategory Stats](Images/pivot_table_pivot_chart_subcategory_stats.png)
+  ![Subcategory Stats](Images/pivot_table_pivot_chart_subcategory_stats.png)
 
 I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**. I then created a stacked column pivot chart that can be filtered by country and parent-category based on the table created.
 
-![Timestamp Conversion](Images/timestamp_conversion.png)
+  ![Timestamp Conversion](Images/timestamp_conversion.png)
 
 The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.
 
-![Outcomes Based on Launch Date](Images/launch_date_outcomes.png)
+  ![Outcomes Based on Launch Date](Images/launch_date_outcomes.png)
 
 I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`. After that, I created a pivot chart line graph that visualizes this new table.
 
