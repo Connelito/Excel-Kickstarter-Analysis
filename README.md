@@ -38,7 +38,7 @@ I created two new columns, one called `Category` at Q and another called `Sub-Ca
 
 ## Pivot Tables and Pivot Charts
 
-Using the modified data of the Kickstarter projects, I will use pivot tables and pivot charts with the newly created columns to futher my attempt to uncover some market trends.
+Using the modified data of the Kickstarter projects, I will use pivot tables and pivot charts with the newly created columns to further my attempt to uncover some market trends.
 
   ![Category Stats](Images/pivot_table_pivot_chart_category_stats.png)
 
@@ -87,11 +87,11 @@ In the `Goal` column, I created 12 rows with the following headers:
 
   ![Goal Outcomes](Images/goal_outcomes.png)
 
-Using the `COUNTIFS()` formula, I counted how many successful, failed, and canceled projects were created with goals within the ranges listed above. With that, I populated the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data.
+Using the `COUNTIFS()` formula, I counted how many successful, failed, and canceled projects were created with goals within the ranges listed above. With that, I populated the `Number Successful`, `Number Failed` and `Number Canceled` columns with this data.
 
-I then added up each of the values in the `Number Successful`, `Number Failed`, and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, I found the percentage of projects that were successful, failed, or canceled per goal range.
+I then added up each of the values in the `Number Successful`, `Number Failed` and `Number Canceled` columns to populate the `Total Projects` column. Then, using a mathematical formula, I found the `Percentage Successful`, `Percentage Failed` and `Percentage Canceled` for the projects per goal range.
 
-From there, I created a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
+Once completed, I created a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
 
 ## Statistical Analysis
 
@@ -99,7 +99,7 @@ If one were to describe a successful crowdfunding campaign, most people would us
 
   ![Backers Outcomes](Images/backers_outcome.png)
 
-I created a new worksheet in my workbook and created a column for the number of backers of successful campaigns and unsuccessful campaigns. With that information, I was able to evaluate the `Mean` `Median` `Minimum` `Maximum` `Variance` and `Standard Deviation` for successful and unsuccessful campaigns.
+I created a new worksheet in my workbook and created a column for the number of backers of successful campaigns and unsuccessful campaigns. With that information, I was able to evaluate the `Mean`, `Median`, `Minimum`, `Maximum`, `Variance` and `Standard Deviation` for successful and unsuccessful campaigns.
 
 ## Report
 
