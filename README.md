@@ -46,6 +46,8 @@ I created a new sheet with a pivot table that analyzed my initial worksheet to c
 
   ![Subcategory Stats](Images/pivot_table_pivot_chart_subcategory_stats.png)
 
+## Pivot Tables and Line Graphs
+
 I created a new sheet with a pivot table that analyzed my initial worksheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**. I then created a stacked column pivot chart that can be filtered by country and parent-category based on the table created.
 
   ![Timestamp Conversion](Images/timestamp_conversion.png)
@@ -53,8 +55,6 @@ I created a new sheet with a pivot table that analyzed my initial worksheet to c
 The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.
 
   ![Outcomes Based on Launch Date](Images/launch_date_outcomes.png)
-
-## Pivot Tables and Line Graphs
 
 I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`. After that, I created a pivot chart line graph that visualizes this new table.
 
