@@ -10,10 +10,10 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 Using the Excel table provided, I modified and analyzed the data of 4,000 past Kickstarter projects as I attempt to uncover some market trends.
 
-  ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)
-  ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)
-  ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)
-  ![Campaign Status-Live](Images/conditional_formatting_state_live.png)
+  ![Campaign Status-Successful](Images/conditional_formatting_state_successful.png)<br>
+  ![Campaign Status-Canceled](Images/conditional_formatting_state_canceled.png)<br>
+  ![Campaign Status-Failed](Images/conditional_formatting_state_failed.png)<br>
+  ![Campaign Status-Live](Images/conditional_formatting_state_live.png)<br>
 
 I used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
 
@@ -36,7 +36,7 @@ I created a new column P called `Average Donation` that uses a formula to uncove
 
 I created two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category` and `Sub-Category` column into two parts.
 
-## Pivot Tables and Pivot Charts
+## Pivot Tables and Stacked Column Charts
 
 Using the modified data of the Kickstarter projects, I will use pivot tables and pivot charts with the newly created columns to further my attempt to uncover some market trends.
 
@@ -53,6 +53,8 @@ I created a new sheet with a pivot table that analyzed my initial worksheet to c
 The dates stored within the `deadline` and `launched_at` columns use Unix timestamps. Fortunately, [this formula](https://www.extendoffice.com/documents/excel/2473-excel-timestamp-to-date.html) can be used to convert these timestamps to a normal date. I created a new column S called `Date Created Conversion` that will convert the data contained within `launched_at` into Excel's date format. After that, I created a new column T called `Date Ended Conversion` that will convert the data contained within `deadline` into Excel's date format.
 
   ![Outcomes Based on Launch Date](Images/launch_date_outcomes.png)
+
+## Pivot Tables and Line Graphs
 
 I created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `Category` and `Date Created Conversion (Year)`. After that, I created a pivot chart line graph that visualizes this new table.
 
@@ -101,7 +103,7 @@ If one were to describe a successful crowdfunding campaign, most people would us
 
 I created a new worksheet in my workbook and created a column for the number of backers of successful campaigns and unsuccessful campaigns. With that information, I was able to evaluate the `Mean`, `Median`, `Minimum`, `Maximum`, `Variance` and `Standard Deviation` for successful and unsuccessful campaigns.
 
-## Report
+## Written Report
 
 Conclusions we can draw about Kickstarter campaigns from the data given:
 * Theater is the most successful category for projects
